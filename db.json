@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "user": "A",
+            "password": "PasswordOfUserA"
+        },
+        {
+            "user": "B",
+            "password": "PasswordOfUserB"
+        },
+        {
+            "user": "C",
+            "password": "PasswordOfUserC"
+        }
+    ]
+}

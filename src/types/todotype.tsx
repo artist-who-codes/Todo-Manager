@@ -1,0 +1,1 @@
+export interface todotype { id: number, user: string, task: string, completed: boolean }
