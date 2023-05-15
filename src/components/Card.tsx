@@ -43,7 +43,8 @@ const Card = ({ todo }: Props) => {
     const [check, setcheck] = useState(todo.completed)
     useEffect(() => {
         setcheck(todo.completed);
-    }, [todo.completed]);
+        console.log(todo)
+    }, [todo.id]);
     return (
         <>
             <div className={`shadow-lg mx-3 p-5 rounded-xl hover:bg-white transition ease-in-out ${check ? 'bg-[#C9C9C9]' : 'bg-[#BDD2FA]'}`}>
@@ -52,7 +53,7 @@ const Card = ({ todo }: Props) => {
                         <span className="checkmark"></span>
                         <input type="checkbox" className="form-checkbox m-2 w-4 h-4"
                             checked={check}
-                            onChange={(e) => setcheck(e.target.checked)} />
+                            onChange={() => setcheck(!check)} />
                         {todo.task}
                     </label>
                 </div>
