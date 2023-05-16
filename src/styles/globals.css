@@ -20,5 +20,35 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  transition: ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.FI {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+
+.CardComponent {
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 100
+  }
+
+  to {
+    opacity: 0;
+  }
 }

@@ -44,10 +44,13 @@ const Todos = (props: Props) => {
             <div className='m-20 sm:my-10 sm:mx-28 transition-all duration-700 ease-in-out'>
                 <div className='flex text-3xl font-bold'>Hello&nbsp;<p className="text-[#2161AB]">{name}</p>!</div>
                 <div className="mt-14 mb-5 text-2xl sm:text-2xl font-bold"> Here is your List!</div>
-                <div className='sm:grid sm:grid-cols-4 sm:gap-3 '>
-                    {todos.map((todo) => {
-                        return (<Card todo={todo} />)
-                    })}
+                <div className=''>
+                    <div className='sm:grid sm:grid-cols-4 sm:gap-3 '>
+                        {todos.map((todo) => {
+                            return (
+                                <div className='FI'><Card todo={todo} /></div>)
+                        })}
+                    </div>
                 </div>
                 <center className="mt-24 max-sm:mt-20">
                     <div className="mb-5 max-sm:text-2xl text-2xl font-bold"> Add more Tasks to your List!</div>
