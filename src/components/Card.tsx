@@ -43,21 +43,20 @@ const Card = ({ todo }: Props) => {
     const [check, setcheck] = useState(todo.completed)
     useEffect(() => {
         setcheck(todo.completed);
-        console.log(todo)
     }, [todo.id]);
     return (
         <>
-            <div className={`shadow-lg mx-3 p-5 rounded-xl hover:bg-white transition ease-in-out ${check ? 'bg-[#C9C9C9]' : 'bg-[#BDD2FA]'}`}>
+            <div className={`max-sm:my-4 shadow-lg mx-3 p-5 rounded-xl hover:bg-white transition-all duration-700 ease-in-out ${check ? 'bg-[#C9C9C9]' : 'bg-[#BDD2FA]'}`}>
                 <div>
-                    <label className="text-lg font-bold ">
+                    <label className="max-sm:text-lg max-sm:font-medium text-lg font-bold ">
                         <span className="checkmark"></span>
-                        <input type="checkbox" className="form-checkbox m-2 w-4 h-4"
+                        <input type="checkbox" className="max-sm:w-4 max-sm:h-4 form-checkbox m-2 w-4 h-4"
                             checked={check}
                             onChange={() => setcheck(!check)} />
                         {todo.task}
                     </label>
                 </div>
-                <button className="bg-[#2161AB] px-3 py-1 mt-3 ml-2 font-md rounded-lg text-white text-end" onClick={() => deleteTask(todo.id)}>Delete this Task</button>
+                <button className="bg-[#2161AB] px-3 py-1 mt-3 ml-2 font-md max-sm:font-medium max-sm:text-md max-sm:p-2.5 max-sm:mt-5 rounded-lg text-white" onClick={() => deleteTask(todo.id)}>Delete this Task</button>
             </div >
         </>
     )

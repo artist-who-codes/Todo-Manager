@@ -5,7 +5,7 @@ type Props = {}
 const Header = (props: Props) => {
     return (
         <>
-            <div className="mt-10 text-center p-4 bg-[#1257D9] text-white text-4xl font-extrabold"> <p className='mx-14'>Todo Manager</p></div>
+            <div className="font-extrabold mt-14 text-3xl p-6 text-center text-white bg-[#1257D9] sm:mt-10 sm:p-4 sm:text-4xl "> <p className='mx-14'>Todo Manager</p></div>
         </>
     )
 }

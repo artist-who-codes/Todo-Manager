@@ -1,15 +1,15 @@
 const Users = [
     {
-        user: "Abirami",
-        password: "123"
+        user: "Hinata",
+        password: "naruto"
     },
     {
-        user: "Rohan Britto",
-        password: "123"
+        user: "Anya",
+        password: "peanuts"
     },
     {
-        user: "Ravi Shanker",
-        password: "123"
+        user: "Naruto",
+        password: "ramen"
     }
 ]
 export default Users

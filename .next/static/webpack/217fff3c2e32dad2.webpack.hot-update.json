@@ -1,1 +1,0 @@
-{"c":["webpack"],"r":["pages/[username]"],"m":["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=A%3A%5CAbirami%5CLearning%5CTodo-Manager%5Csrc%5Cpages%5C%5Busername%5D.tsx&page=%2F%5Busername%5D!","./src/components/Card.tsx","./src/components/Error.tsx","./src/components/Todos.tsx","./src/pages/[username].tsx"]}

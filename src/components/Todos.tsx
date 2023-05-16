@@ -41,18 +41,18 @@ const Todos = (props: Props) => {
     }
     return (
         <>
-            <div className='my-10 mx-28'>
-                <div className='flex text-4xl font-bold'>Hello &nbsp; <p className="text-[#2161AB]">{name}</p>!</div>
-                <div className="mt-14 mb-5 text-2xl font-bold"> Here is your List!</div>
-                <div className='grid grid-cols-4 gap-3 '>
+            <div className='m-20 sm:my-10 sm:mx-28 transition-all duration-700 ease-in-out'>
+                <div className='flex text-3xl font-bold'>Hello&nbsp;<p className="text-[#2161AB]">{name}</p>!</div>
+                <div className="mt-14 mb-5 text-2xl sm:text-2xl font-bold"> Here is your List!</div>
+                <div className='sm:grid sm:grid-cols-4 sm:gap-3 '>
                     {todos.map((todo) => {
                         return (<Card todo={todo} />)
                     })}
                 </div>
-                <center className="mt-24">
-                    <div className="mb-5 text-2xl font-bold"> Add more Tasks to your List!</div>
-                    <input className='shadow-md text-lg w-80 h-10 rounded-lg px-4 py-6 bg-[#BDD2FA] mt-5' type="text" placeholder='Enter your Task here' value={Task} onChange={(e) => { setTask(e.target.value) }}></input><br></br>
-                    <button className="bg-[#2161AB] px-3 py-1 mt-5 ml-2 font-md rounded-lg text-white text-end" onClick={() => { addTask(Task) }}>Add to Todos</button>
+                <center className="mt-24 max-sm:mt-20">
+                    <div className="mb-5 max-sm:text-2xl text-2xl font-bold"> Add more Tasks to your List!</div>
+                    <input className='shadow-md max-sm:text-lg max-sm:py-6 max-sm:rounded-xl text-lg h-10 rounded-lg px-4 py-6 bg-[#BDD2FA] mt-5' type="text" placeholder='Enter your Task here' value={Task} onChange={(e) => { setTask(e.target.value) }}></input><br></br>
+                    <button className="bg-[#2161AB] px-3 py-1 mt-3 ml-2 font-md max-sm:font-medium max-sm:text-lg max-sm:py-2 max-sm:mt-5 rounded-lg text-white" onClick={() => { addTask(Task) }}>Add to Todos</button>
                 </center>
             </div>
         </>
