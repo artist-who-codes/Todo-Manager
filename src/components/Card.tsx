@@ -29,13 +29,13 @@ const Card = ({ todo }: Props) => {
 
 
     async function deleteTask(id: number) {
-        setShow(false)
         const response = await fetch(`/api/${todo.user}/${id}`, {
             method: 'DELETE',
             body: JSON.stringify({ id }),
             headers: { 'Content-Type': 'application/json' }
         });
         console.log(id);
+        setShow(false)
         const data = await response.json();
     }
 
